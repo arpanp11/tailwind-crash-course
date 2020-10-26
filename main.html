@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Concepts (Tailwind CSS)</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1
+      class="p-3 text-5xl text-center bg-teal-400 tracking-wider shadow-outline"
+    >
+      Tailwind CSS Main Concepts
+    </h1>
+    <!-- Spacing -- margin, padding -->
+    <div class="p-20 bg-yellow-700">
+      <h2
+        class="mb-2 text-4xl font-bold text-yellow-100 border border-b-4 text-center"
+      >
+        Spacing Section
+      </h2>
+      <p class="mb-6 text-yellow-200 text-xl">
+        Tailwind helps us space things out with marging and padding.
+      </p>
+      <!-- when we apply padding to button, x-axis double than y-axis -->
+      <button
+        class="mr-3 py-2 px-4 bg-purple-600 hover:bg-purple-500 text-purple-100 rounded transition duration-300"
+      >
+        Learn More
+      </button>
+      <button
+        class="px-8 py-2 bg-green-600 hover:bg-green-500 text-green-100 rounded transition duration-300 shadow-lg"
+      >
+        Sign Up
+      </button>
+    </div>
+
+    <!-- Box propeties -- backgroung, borders, rounding, shades -->
+    <div class="p-20 bg-blue-300">
+      <h2 class="mb-4 text-4xl text-blue-800 bg-blue-400 text-center">
+        Box properties
+      </h2>
+      <div
+        class="p-10 bg-purple-400 rounded-lg border border-purple-500 shadow-2xl text-purple-700 text-center uppercase font-bold tracking-widest"
+      >
+        I am a box
+      </div>
+    </div>
+
+    <!-- Sizing & numbering  -- any tailwind number(x) * 4 = 4Xpx-->
+    <div class="p-20 bg-orange-300">
+      <h2 class="mb-4 text-4xl text-orange-800 bg-orange-400 text-center">
+        Sizing & Numbering
+      </h2>
+      <button class="p-4 bg-orange-400 text-orange-700 rounded w-8">
+        click me
+      </button>
+      <button class="p-4 bg-orange-400 text-orange-700 rounded w-12">
+        click me
+      </button>
+      <button class="p-4 bg-orange-400 text-orange-700 rounded w-20">
+        click me
+      </button>
+      <button class="p-4 bg-orange-400 text-orange-700 rounded w-32">
+        click me
+      </button>
+      <button class="p-4 bg-orange-400 text-orange-700 rounded w-48 h-48">
+        click me
+      </button>
+    </div>
+
+    <!-- typography -- important topic (text, font, letter spacing etc..) -->
+    <div class="p-20 leading-relaxed text-lg">
+      <h2 class="text-5xl text-gray-700 font-bold tracking-wide">
+        Learning Tailwind is Fun! (Typography)
+      </h2>
+      <h3 class="mb-8 text-2xl text-blue-500">More fun than I expected!</h3>
+      <p class="mb-8">
+        Cupcake ipsum dolor sit. Amet cake cotton candy jelly-o cotton candy.
+        Donut biscuit lemon drops chocolate cake pudding cupcake. Cake jelly-o
+        sweet roll powder chupa chups. Marshmallow brownie chocolate bar bonbon
+        soufflé ice cream lemon drops soufflé. Cupcake pie sweet pastry ice
+        cream. Candy cake wafer candy canes jelly-o dragée donut jelly beans
+        cookie. Jujubes sugar plum cotton candy apple pie cupcake topping. Ice
+        cream bonbon tiramisu apple pie chupa chups marshmallow liquorice wafer.
+        Oat cake candy chupa chups carrot cake.
+      </p>
+      <p class="mb-8">
+        Muffin macaroon carrot cake chupa chups chocolate danish. Cookie lemon
+        drops icing jelly beans sesame snaps sweet fruitcake dessert croissant.
+        Icing icing tiramisu danish candy tootsie roll. Biscuit cake lollipop
+        donut icing marzipan ice cream oat cake caramels. Tiramisu apple pie
+        tiramisu soufflé cake gingerbread jujubes sweet. Biscuit pie candy canes
+        chupa chups sweet cotton candy caramels cotton candy bear claw.
+      </p>
+      <p class="mb-8">
+        Cake carrot cake wafer. Oat cake jelly-o gummi bears toffee jelly-o
+        gummies oat cake sweet roll. Icing marshmallow chocolate cake toffee
+        powder gummi bears tootsie roll toffee. Brownie bonbon apple pie.
+        Tootsie roll bear claw lemon drops cupcake toffee. Marshmallow apple pie
+        cheesecake sweet marshmallow chocolate cake gummi bears.
+      </p>
+    </div>
+
+    <!-- colors -->
+    <div class="p-20 bg-gray-800 space-y-3">
+      <h2
+        class="mb-8 p-2 bg-teal-600 rounded text-white text-white text-2xl animate-bounce"
+      >
+        Transition - Transform - Animation
+      </h2>
+      <div
+        class="p-4 rounded-lg bg-red-100 text-red-800 hover:bg-blue-500 hover:translate-x-4 transform transition duration-300"
+      >
+        I am a box
+      </div>
+      <div
+        class="p-4 rounded-lg bg-red-200 transform hover:-translate-x-4 transition duration-300"
+      >
+        I am a box
+      </div>
+      <div
+        class="p-4 rounded-lg bg-red-300 transform origin-top-left hover:rotate-45 transition duration-75"
+      >
+        I am a box
+      </div>
+      <div
+        class="p-4 rounded-lg bg-red-400 transform origin-bottom-right hover:rotate-45 transition duration-75"
+      >
+        I am a box
+      </div>
+      <div
+        class="p-4 rounded-lg bg-red-500 transform hover:skew-x-12 transition duration-75"
+      >
+        I am a box
+      </div>
+      <div
+        class="p-4 rounded-lg bg-red-600 text-red-100 transform hover:skew-y-12 transition duration-75"
+      >
+        I am a box
+      </div>
+      <div
+        class="p-4 rounded-lg bg-red-700 text-red-100 transform hover:scale-105 transition duration-75"
+      >
+        I am a box
+      </div>
+      <div
+        class="p-4 rounded-lg bg-red-800 text-red-200 transform hover:scale-90 transition duration-75"
+      >
+        I am a box
+      </div>
+      <div
+        class="p-4 rounded-lg bg-red-900 text-red-300 transform hover:skew-x-12 hover:scale-90 hover:translate-x-4 transition duration-75"
+      >
+        I am a box
+      </div>
+      <div
+        class="p-4 rounded-lg bg-blue-600 text-blue-200 border border-blue-900 hover:bg-blue-200 hover:text-black"
+      >
+        I am a box
+      </div>
+    </div>
+
+    <!-- gradient -->
+    <div
+      class="p-20 flex items-center justify-center bg-gradient-to-br from-blue-100 to-purple-400"
+    >
+      <!-- 1. set a class for gradient 
+      2. set a starting color 
+      3. set a end color 
+      4. set a middle color (optinal) -->
+
+      <h3
+        class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-blue-600 to-purple-800"
+      >
+        Whoa Gradients!
+      </h3>
+    </div>
+  </body>
+</html>
